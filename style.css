@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+.button{
+    border: none;
+    padding: 0.6rem;
+    background-color: #0067ac;
+    border-radius: 30px;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2vh 0;
+}
+.padding2{
+    padding: 2rem;
+}
+.heading3{
+    color: #666666;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+header .submenu{
+    display: flex;
+    width: 90%;
+    justify-content:center;
+}
+header .submenu img{
+    height: 1rem;
+}
+header .submenu span{
+    margin: 1rem;
+}
+header span{
+    display: flex;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 2vh;
+}
+.one .left h1{
+    color: #666666;
+    font-size: 2rem;
+}
+.one .left h3{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.one .feature{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 2vh 0;
+}
+.one .left .feature img{
+    height: 2rem;
+}
+.one .left .feature p{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.one .right{
+    position: relative;
+}
+.one .right img{
+    width:100%;
+    height:auto;
+}
+.two .right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.background{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+}
+.one .right .background{
+    right: 0;
+}
+.two .left{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.two .left .img{
+    height: auto;
+    width: 100%;
+}
+
+.three{
+    text-align: center;
+}
+.three .offers .offer img{
+    height: auto;
+    width: 20%;
+    margin: auto;
+}
+.three .offers .offer{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.three .offers .offer h6{
+    font-size: 1rem;
+}
+.four{
+    text-align: center;
+    margin-top: -4rem;
+
+}
+.four .foods .food:hover{
+    background: #0067ac;
+    color: white;
+    
+}
+.four .foods .food button:hover{
+    background: white;
+    color: black;
+    outline: none;
+}
+
+.four .foods .food{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid #666666;
+    border-radius: 12px;
+    padding: 0.8rem;
+}
+.four .foods .food img{
+    width: 50%;
+    height: auto;
+}
+.four .foods .food button{
+    width: 50%;
+}
+.four .foods .food span{
+    color: tomato;
+}
+.four .foods .food .price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+} 
+footer .specialoffer{
+    padding: 2rem;
+    text-align: center;
+}
+footer .specialoffer h4{
+    font-size: 1.6rem;
+}
+footer .specialoffer .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .specialoffer .input input{
+    padding: 0.8rem;
+    margin-top: 3vh;
+    width: 80%;
+    border-radius: 30px;
+    border:1px solid black;
+}
+footer .details{
+    background: linear-gradient(to bottom,#bbdefb,#0067ac);
+    text-align: center;
+    height:80vh;
+}
+footer .detail h1{
+    padding-top: 3vh;
+}
+footer .details .detail{
+    margin: 2vh 0;
+}
+footer .details .detail h4{
+    color: white;
+}
+footer .details .boxes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+footer .details .detail ul{
+    list-style: none;
+}
+footer .details .detail img{
+    height: 2.2rem;
+}
+@media screen and (min-width: 700px){
+    header .submenu{
+        display: flex;
+        flex-direction: row;
+    }
+    .one .left h1{
+        font-size: 3rem;
+    }
+
+    .one .left h3{
+        font-size: 1.2rem;
+        width: 70%;
+        line-height: 2rem;
+    }
+     .one .left button{
+        width: 200px;
+         margin: 4vh 0;
+     }
+     .one .left .features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .one .right .foreground{
+        max-width: 70%;
+        margin-left: 10%;
+     }
+     .one .left .foreground{
+        max-width: 70%;
+        margin-left: 10%;
+
+     }
+     .two .left .background{
+        width: 100%;
+     }
+     .three{
+        background: url(./border\ img2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+     .three .offers{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 5vh 0;
+     }
+     .four .foods{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+     }
+     footer .details .boxes{
+        grid-template-columns: repeat(4,1fr);
+     }
+}
+@media screen and (min-width: 1200px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        height: 15vh;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    .one{
+        display: grid;
+        grid-template-columns: 40% auto;
+        position: relative;
+
+    }
+    .one .left .features{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: absolute;
+        width: 60%;
+    }
+    .one .right .background{
+        position: absolute;
+        top: -40%;
+        height: 100vh;
+        width: auto;
+    }
+    .two{
+        display: grid;
+        grid-template-columns: 60% auto;
+        height:100 vh;
+        margin-top: 4rem;
+    }
+    .three{
+        height: 100vh;
+        background-size: cover;
+    }
+    .three .offers{
+        width: 90%;
+        margin:5vh auto;
+    }
+    .four{
+        display: grid;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        margin-top: -12rem;
+    }
+    .four .all-button{
+        width: 30%;
+       align-self: center;
+       margin-left: 35%;
+    }
+    .four .foods{
+        grid-template-columns: repeat(4,1fr);
+    }
+    footer{
+        position: relative;
+        display: grid;
+        margin-top: 20vh;
+    }
+
+    footer .specialoffer{
+    width: 75%;
+    margin: auto;
+    border: 1px solid #666666;
+    border-radius: 50px;
+    position: absolute;
+    top: -30%;
+    justify-self: center;
+    background: white;
+    background: url(./back7.png);
+    background-size: cover;
+   
+    }
+    footer .specialoffer .input{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+
+    }
+    footer .specialoffer .input input{
+        border: none;
+    }
+    footer .details{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+    }
+}
